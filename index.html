@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Demo</title>
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f0f4f8;
+      color: #1f2937;
+    }
+    .wrapper{
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 24px;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    h1{
+      color: #2563eb;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .card{
+      background: #8590a2;
+      border: 1px solid #d9e5ff;
+      border-radius: 16px;
+      padding: 18px;
+      margin-top: 20px;
+    }
+    
+    .card2{
+      background: #1b9587;
+      border: 1px solid #d9e5ff;
+      border-radius: 16px;
+      padding: 18px;
+      margin-top: 20px;
+    }
+
+    .button{
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .button:hover{
+      background: #b93c2e;
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .box1{
+      background: #d0080b;
+      border: 1px solid #13783b;
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .box2{
+      background: #2a9612;
+      border: 1px solid #13783b;
+      border-radius: 14px;
+      padding: 16px;
+    }
+    
+    .box3{
+      background: #bd0eb8;
+      border: 1px solid #13783b;
+      border-radius: 14px;
+      padding: 16px;
+    }
+    
+    .box4{
+      background: #258cb4;
+      border: 1px solid #13783b;
+      border-radius: 14px;
+      padding: 16px;
+    }
+    @media (max-width: 700px){
+      .grid{
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>CSS Demo</h1>
+    <p style="text-align:center;">This page shows how CSS changes the appearance of a webpage.</p>
+
+    <div class="card">
+      <h2>Styled Content</h2>
+      <p>
+        CSS controls colors, spacing, layout, borders, and fonts. It makes a webpage look better and easier to read.
+      </p>
+      <a class="button" href="#">Styled Button</a>
+    </div>
+
+    <div class="grid">
+      <div class="box1">
+        <h3>Color</h3>
+        <p>Headings and buttons use different colors for better design.</p>
+      </div>
+      <div class="box2">
+        <h3>Layout</h3>
+        <p>The grid layout arranges content into columns.</p>
+      </div>
+      <div class="box3">
+        <h3>Spacing</h3>
+        <p>Padding and margin create space between elements.</p>
+      </div>
+      <div class="box4">
+        <h3>Responsive Design</h3>
+        <p>The page changes layout on smaller screens.</p>
+      </div>
+    </div>
+
+    <div class="card2">
+      <h2>Explanation</h2>
+      <p>
+        This example demonstrates styling using CSS. The page includes colors, borders, spacing, hover effects,
+        and a responsive grid layout.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
